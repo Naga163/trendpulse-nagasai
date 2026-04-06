@@ -1,4 +1,20 @@
+import streamlit as st   # 👈 FIRST
 
+st.set_page_config(
+    page_title="TrendPulse Dashboard",
+    layout="wide"
+)
+
+st.markdown("""
+    <style>
+    .main {
+        background-color: #0e1117;
+        color: white;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# 👇 THEN your existing imports
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
